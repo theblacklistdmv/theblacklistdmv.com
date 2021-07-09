@@ -1,17 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `The Blacklist DMV`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `The Blacklist DMV`,
+      summary: `Food bloggers from MD`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Spotlighting Black-owned businesses in Washington DC, Maryland, and Virginia`,
+    siteUrl: `https://theblacklistdmv.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `theblacklistdmv`,
+      instagram: `theblacklistdmv`,
+      tiktok: `theblacklistdmv`,
+      facebook: `theblacklistdmv`
     },
   },
   plugins: [
+    `gatsby-plugin-instagram-embed`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -112,13 +116,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `The Blacklist DMV`,
+        short_name: `The Blacklist DMV`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/theblacklistdmv-logo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -126,5 +130,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    // `gatsby-plugin-tiktok`,
   ],
 }
