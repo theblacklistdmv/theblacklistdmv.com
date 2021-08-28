@@ -15,6 +15,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-instagram-embed`,
     `gatsby-plugin-image`,
     {
@@ -127,6 +128,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-fontawesome-css`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

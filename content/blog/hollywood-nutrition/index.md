@@ -3,11 +3,6 @@ title: Hollywood Nutrition
 date: "2021-04-02"
 description: "Delicious & healthy milkshakes!"
 ---
-Author: Blacklist DMV
-
-Posted: 4/2/2021, 10:34:13 PM
-
-Last Updated: 4/2/2021, 10:34:13 PM
 
 Calling College Park! 🗣🗣 If you want a delicious milkshake that’s good for you too, check out Hollywood Nutrition!  ✨
 
