@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `The Blacklist DMV`,
+    title: `The Blacklist DMV | Spotlighting Black-owned food businesses in DC, MD, & VA`,
     author: {
       name: `The Blacklist DMV`,
       summary: `Food bloggers from MD`,
     },
-    description: `Spotlighting Black-owned businesses in Washington DC, Maryland, and Virginia`,
+    description: `Follow The Blacklist DMV uses social media @theblacklistdmv to see our journey spotlighting Black-owned food businesses/services in Washington D.C., Maryland, & Virginia`,
     siteUrl: `https://theblacklistdmv.com`,
     social: {
       twitter: `theblacklistdmv`,
@@ -13,8 +13,10 @@ module.exports = {
       tiktok: `theblacklistdmv`,
       facebook: `theblacklistdmv`
     },
+    keywords: [`black-owned`, `food`, `business`, `theblacklistdmv`, `black`, `dmv`, `dc`, `md`, `va`]
   },
   plugins: [
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-instagram-embed`,
     `gatsby-plugin-image`,
@@ -120,7 +122,7 @@ module.exports = {
         name: `The Blacklist DMV`,
         short_name: `The Blacklist DMV`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#000000`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/theblacklistdmv-logo.png`, // This path is relative to the root of the site.
