@@ -1,6 +1,6 @@
 ---
 title: Black-Owned Bakeries in Virginia
-date: "2021-05-30"
+date: '2021-05-30'
 description: Check out these Black-owned Bakeries in Virginia
 ---
 

@@ -1,12 +1,12 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
-import Bio from "../components/Bio"
-import AppLayout from "../components/AppLayout"
-import Seo from "../components/Seo"
+import * as React from 'react';
+import { Link, graphql } from 'gatsby';
+import Bio from '../components/Bio';
+import AppLayout from '../components/AppLayout';
+import Seo from '../components/Seo';
 
 const BlogPostTemplate = ({ data }) => {
-  const post = data.markdownRemark
-  const { previous, next } = data
+  const post = data.markdownRemark;
+  const { previous, next } = data;
 
   return (
     <AppLayout>
@@ -59,10 +59,10 @@ const BlogPostTemplate = ({ data }) => {
         </ul>
       </nav>
     </AppLayout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -102,4 +102,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

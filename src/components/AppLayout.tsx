@@ -9,14 +9,11 @@ const AppLayout: React.FC = ({ children }) => {
     <>
       <header>
         <AppNavbar />
-        <AppHeader />
       </header>
-      <Container>
-        <main>{children}</main>
-        <footer>
-          <AppFooter />
-        </footer>
-      </Container>
+      <main>{children}</main>
+      <footer>
+        <AppFooter />
+      </footer>
     </>
   );
 };

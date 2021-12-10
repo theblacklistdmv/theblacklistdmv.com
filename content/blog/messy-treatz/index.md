@@ -1,28 +1,18 @@
 ---
 title: Messy Treatz
-date: "2021-05-14"
-description: "Black-owned bakery near the waterfront at the National Harbor!"
+date: '2021-05-14'
+description: 'Black-owned bakery near the waterfront at the National Harbor!'
 ---
 
 🧁 It’s time to get messy!! We had the chance to visit Messy Treatz in the National Harbor this weekend! @messytreatz 🧁
 
-
-
 😍 We LOVED the cupcakes! The cake was super moist and crumbly. The icing EVERYTHING - super soft and fluffy, similar to whipped cream! The whole thing melted in your mouth! 😍
-
-
 
 🍪 Liz loved the Cookie Monster, with cookie bits baked into the cake!
 
-
-
 🍎 Shi got the Apple Cobbler cupcake, with slices of apples coated in cinnamon & sugar on the top AND in the middle. The apples were sweet, but they didn’t overpower the cake flavor. Perfection in a cupcake!
 
-
-
 💙 We got to meet the owner Brittany and her daughters, who were so nice and friendly! It’s great to have a Black-owned, woman-owned, and family-run business here at the @nationalharbor! 💙
-
-
 
 🧁 Messy Treatz
 

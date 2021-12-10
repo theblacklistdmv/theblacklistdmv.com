@@ -1,7 +1,7 @@
 ---
 title: 150+ Black owned restaurants in Baltimore, MD!
-date: "2021-05-14"
-description: "Check out this list of 150+ Black owned restaurants in Baltimore, MD! Each link is a link to their Instagram page!"
+date: '2021-05-14'
+description: 'Check out this list of 150+ Black owned restaurants in Baltimore, MD! Each link is a link to their Instagram page!'
 ---
 
 ## African

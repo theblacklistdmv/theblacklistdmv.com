@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Liz Beal",
+    "title": "Co-Founder, Social Media Coordinator",
+    "favoriteBusiness": "ELife Restaurant (they're vegan!)",
+    "favoriteFoods": "All types of pasta",
+    "funFact": "I am a teacher! I am passionate about working with children and making the education system equitable for all students.",
+    "img": "/about/liz_headshot_400.jpg",
+    "alt": "Headshot of Liz Beal",
+    "extension": "jpg"
+  },
+  {
+    "name": "Shi Johnson-Bey",
+    "title": "Co-founder, Full-stack Developer",
+    "favoriteBusiness": "Cloudy Donut Co.",
+    "favoriteFoods": "French Fries, Fish Tacos, and Mangos",
+    "funFact": "I am a PhD student studying Computational Media. I enjoy making content creation tools for video games.",
+    "img": "/about/shi_headshot_400.jpg",
+    "extension": "jpg",
+    "alt": "Headshot of Liz Beal"
+  }
+]

@@ -1,9 +1,8 @@
 ---
 title: Gangster Vegan
-date: "2021-07-08"
-description: "Vegan taco bowls, cheesecakes, and more!"
+date: '2021-07-08'
+description: 'Vegan taco bowls, cheesecakes, and more!'
 ---
-
 
 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theblacklistdmv/video/6986432689565961478" data-video-id="6986432689565961478" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@theblacklistdmv" href="https://www.tiktok.com/@theblacklistdmv">@theblacklistdmv</a> <p><a title="blackowned" target="_blank" href="https://www.tiktok.com/tag/blackowned">##BlackOwned</a> book store in <a title="dc" target="_blank" href="https://www.tiktok.com/tag/dc">##DC</a>!! Mahogany Books • <a title="exploring" target="_blank" href="https://www.tiktok.com/tag/exploring">##exploring</a> <a title="wellness" target="_blank" href="https://www.tiktok.com/tag/wellness">##wellness</a> <a title="summervibes" target="_blank" href="https://www.tiktok.com/tag/summervibes">##summervibes</a> •</p> <a target="_blank" title="♬ Calm LoFi song(882353) - S_R" href="https://www.tiktok.com/music/Calm-LoFi-song-882353-6886912570821707777">♬ Calm LoFi song(882353) - S_R</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 

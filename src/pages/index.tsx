@@ -3,8 +3,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import AppLayout from '../components/AppLayout';
 import Seo from '../components/Seo';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Col, Card, Row, Carousel } from 'react-bootstrap';
+import { Container, Col, Card, Row } from 'react-bootstrap';
 import { StaticImage } from 'gatsby-plugin-image';
+import AboutSection from '../components/home/AboutSection';
+import AppHeader from '../components/AppHeader';
 
 const HomePage: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -29,6 +31,18 @@ const HomePage: React.FC = () => {
           }
         }
       }
+      allTeamMemberAboutJson {
+        nodes {
+          img
+          extension
+          title
+          name
+          funFact
+          favoriteFoods
+          favoriteBusiness
+          alt
+        }
+      }
     }
   `);
 
@@ -40,201 +54,49 @@ const HomePage: React.FC = () => {
         keywords={data.site.siteMetadata.keywords}
       />
 
-      <Container style={{ paddingTop: '1rem', color: 'white' }}>
-        <Container>
-          <Row>
-            <Col md={12}>
-              <h1 id="welcome">Welcome!</h1>
-              <p>
-                Welcome to theblacklistdmv.com! We promote and highlight
-                Black-owned food businesses and services located in Washington
-                D.C., Maryland, and Virginia. We have social media accounts on
-                TikTok, Instagram, Facebook, and Twitter. TikTok is by far our
-                most popular platform with over 67,000 followers and growing. We
-                love trying new places and showcasing our experiences online.
-                Check out our content, leave a like, and don't forget to follow
-                us. Check out our online business directory, Jyackl (pronounced
-                like jackal), at{' '}
-                <a href="https://jyackl.com" target="_blank" rel="noreferrer">
-                  Jyackl.com
-                </a>
-              </p>
-            </Col>
-            {/* <Col md={6}>
-              <Carousel fade indicators={false}>
-                <Carousel.Item>
-                  <StaticImage
-                    src={'../images/food/spizzy_0.jpg'}
-                    alt={'Spizzy - Fort Washington Waffle'}
-                    style={{
-                      height: '100%',
-                      objectFit: 'cover',
-                    }}
-                  />
-                  <Carousel.Caption>
-                    <p
-                      style={{
-                        fontSize: 'small',
-                        background: '#0000007a',
-                        padding: '0.25rem',
-                      }}
-                    >
-                      Spizzy - Fort Washington Waffle
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
+      <AppHeader />
+      <div style={{ width: '100%', height: '4px', background: 'red' }}></div>
+      <div style={{ width: '100%', height: '4px', background: 'black' }}></div>
+      <div style={{ width: '100%', height: '4px', background: 'green' }}></div>
+      <div style={{ paddingTop: '1rem' }}>
+        <Container style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+          <h1 id="welcome">Welcome!</h1>
+          <p>
+            Welcome to theblacklistdmv.com! We promote and highlight Black-owned
+            food businesses and services located in Washington D.C., Maryland,
+            and Virginia. We have social media accounts on TikTok, Instagram,
+            Facebook, and Twitter. TikTok is by far our most popular platform
+            with over 67,000 followers and growing. We love trying new places
+            and showcasing our experiences online. Check out our content, leave
+            a like, and don't forget to follow us. Check out our online business
+            directory, Jyackl (pronounced like jackal), at{' '}
+            <a href="https://jyackl.com" target="_blank" rel="noreferrer">
+              Jyackl.com
+            </a>
+          </p>
 
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/cloudy_donuts_0.jpg"
-                    alt={`Cloudy Donut Co. - Assorted Donuts`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
+          <p>
+            Our Blacklist community grows everyday, with 70K followers and
+            growing.
+          </p>
 
-                  <Carousel.Caption>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/crave_it_on_main.jpg"
-                    alt={`Waffles from Spizzy Smoothies`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
+          <p>
+            If you have any questions or feedback, please feel free to reach out
+            to us via email or social media.
+          </p>
 
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/crave_it_on_main.jpg"
-                    alt={`Waffles from Spizzy Smoothies`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
-
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/crave_it_on_main.jpg"
-                    alt={`Waffles from Spizzy Smoothies`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
-
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/crave_it_on_main.jpg"
-                    alt={`Waffles from Spizzy Smoothies`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
-
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/crave_it_on_main.jpg"
-                    alt={`Waffles from Spizzy Smoothies`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
-
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/crave_it_on_main.jpg"
-                    alt={`Waffles from Spizzy Smoothies`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
-
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/crave_it_on_main.jpg"
-                    alt={`Waffles from Spizzy Smoothies`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
-
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <StaticImage
-                    src="../images/food/crave_it_on_main.jpg"
-                    alt={`Waffles from Spizzy Smoothies`}
-                    style={{
-                      maxWidth: '100%',
-                    }}
-                  />
-
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </Col> */}
-          </Row>
+          <p>Thank you for visiting!</p>
         </Container>
 
-        <hr></hr>
+        <div
+          className="parallax"
+          style={{ backgroundImage: 'url(/parallax/happy_cafe_va_0.jpg)' }}
+        >
+          <div className="tint"></div>
+          <div className="section-title">ABOUT US</div>
+        </div>
 
-        <Container>
+        <Container style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
           <h1 id="about">About Us</h1>
           <p>
             Hi! Welcome to The Blacklist DMV food blog. We started as an
@@ -274,46 +136,10 @@ const HomePage: React.FC = () => {
             joined us on this journey!
           </p>
 
-          <div
-            style={{
-              display: 'inline-flex',
-              flexWrap: 'wrap',
-              gap: '12px',
-              justifyContent: 'center',
-              marginBottom: '16px',
-            }}
-          >
-            <Card
-              style={{ minWidth: '300px', maxWidth: '20rem', color: 'black' }}
-            >
-              <Card.Body>
-                <Card.Title>Liz Beal</Card.Title>
-                <Card.Subtitle>
-                  Co-Founder, Social Media Coordinator, and Head of Data
-                  Collection
-                </Card.Subtitle>
-              </Card.Body>
-              <Card.Img
-                variant="bottom"
-                src="/about/liz.png"
-                style={{ width: '100%' }}
-              />
-            </Card>
-
-            <Card
-              style={{ minWidth: '300px', maxWidth: '20rem', color: 'black' }}
-            >
-              <Card.Body>
-                <Card.Title>Shi Johnson-Bey</Card.Title>
-                <Card.Subtitle>Co-Founder, Web Developer</Card.Subtitle>
-              </Card.Body>
-              <Card.Img
-                variant="bottom"
-                src="/about/shi.png"
-                style={{ width: '100%' }}
-              />
-            </Card>
-          </div>
+          <AboutSection
+            team_data={data.allTeamMemberAboutJson.nodes}
+            style={{ paddingTop: '2rem', paddingBottom: '2rem' }}
+          />
 
           <h2>Why Black-owned Food Businesses?</h2>
 
@@ -334,23 +160,81 @@ const HomePage: React.FC = () => {
             </a>
             )
           </p>
-
-          <p>
-            Our Blacklist community grows everyday, with 70K followers and
-            growing.
-          </p>
-
-          <p>
-            If you have any questions or feedback, please feel free to reach out
-            to us via email or social media.
-          </p>
-
-          <p>Thank you for visiting!</p>
         </Container>
 
-        <hr></hr>
+        <div
+          className="parallax"
+          style={{ backgroundImage: 'url(/parallax/spizzy_0.jpg)' }}
+        >
+          <div className="tint"></div>
+          <div className="section-title">PRESS</div>
+        </div>
 
-        <Container>
+        <Container style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+          <Row>
+            <Col sm>
+              <Card style={{ margin: '8px' }} className="shadow">
+                <a
+                  href="https://dcist.com/story/20/08/26/tiktok-dc-md-va-social-media-kevin-kramer-styled2be/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <StaticImage
+                    src="../images/TheDCist.jpg"
+                    alt="The DCist Logo"
+                  />
+                </a>
+              </Card>
+            </Col>
+            <Col sm>
+              <Card
+                style={{ margin: '8px', padding: '16px' }}
+                className="shadow"
+              >
+                <a
+                  href="https://wjla.com/news/local/couple-creates-business-identify-promote-dmv-black-owned-food-establishment"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <StaticImage
+                    src="../images/WJLA-TV_logo.png"
+                    alt="WJLA TV logo"
+                  />
+                </a>
+              </Card>
+            </Col>
+            <Col
+              sm
+              style={{ justifyContent: 'center', alignContent: 'center' }}
+            >
+              <Card
+                style={{ margin: '8px', padding: '16px' }}
+                className="shadow"
+              >
+                <a
+                  href="https://voyagebaltimore.com/interview/meet-liz-beal-shi-johnson-bey-of-washington-dc-baltimore-area/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <StaticImage
+                    src="../images/VoyageBaltimorelarge.png"
+                    alt="Voyage Baltimore logo"
+                  />
+                </a>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+
+        <div
+          className="parallax"
+          style={{ backgroundImage: 'url(/parallax/magnolias_on_king.jpg)' }}
+        >
+          <div className="tint"></div>
+          <div className="section-title">CONTACT</div>
+        </div>
+
+        <Container style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
           <h1 id="contact">Contact Us</h1>
           <p>
             We can be reached via any of our social media accounts or by email.
@@ -401,8 +285,8 @@ const HomePage: React.FC = () => {
             </li>
             <li>
               <b>Email: </b>
-              <a href="mailto:theblacklistdmv@gmail.com" rel="noreferrer">
-                theblacklistdmv@gmail.com
+              <a href="mailto:contact@theblacklistdmv.com" rel="noreferrer">
+                contact@theblacklistdmv.com
               </a>
             </li>
           </ul>
@@ -455,69 +339,7 @@ const HomePage: React.FC = () => {
             <hr></hr>
           </div>
         </section> */}
-
-        <hr></hr>
-
-        <Container>
-          <h1>The Blacklist DMV Merch</h1>
-
-          <div
-            style={{
-              display: 'inline-flex',
-              flexWrap: 'wrap',
-              gap: '12px',
-              width: '100%',
-              justifyContent: 'center',
-              color: 'black',
-            }}
-          >
-            <Card style={{ width: '20rem' }}>
-              <StaticImage
-                src="../images/stickers_a.jpg"
-                alt={`The Blacklist DMv sticker on a silver water bottle.`}
-              />
-              <Card.Body>
-                <Card.Title>
-                  Buy TheBlacklistDMV stickers on RedBubble!
-                </Card.Title>
-              </Card.Body>
-            </Card>
-          </div>
-        </Container>
-
-        {/* <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol> */}
-      </Container>
+      </div>
     </AppLayout>
   );
 };

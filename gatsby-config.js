@@ -1,6 +1,6 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
@@ -15,9 +15,19 @@ module.exports = {
       twitter: `theblacklistdmv`,
       instagram: `theblacklistdmv`,
       tiktok: `theblacklistdmv`,
-      facebook: `theblacklistdmv`
+      facebook: `theblacklistdmv`,
     },
-    keywords: [`black-owned`, `food`, `business`, `theblacklistdmv`, `black`, `dmv`, `dc`, `md`, `va`]
+    keywords: [
+      `black-owned`,
+      `food`,
+      `business`,
+      `theblacklistdmv`,
+      `black`,
+      `dmv`,
+      `dc`,
+      `md`,
+      `va`,
+    ],
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -27,8 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/`,
+        name: `content`,
       },
     },
     {
@@ -38,6 +48,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -63,7 +80,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: "gatsby-plugin-firebase",
+      resolve: 'gatsby-plugin-firebase',
       options: {
         credentials: {
           apiKey: process.env.GATSBY_FIREBASE_API_KEY,
@@ -72,28 +89,13 @@ module.exports = {
           storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
           messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
           appId: process.env.GATSBY_FIREBASE_APP_ID,
-          measurementId: process.env.GATSBY_FIREBASE_MEASUREMENT_ID
-        }
-      }
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `The Blacklist DMV`,
-        short_name: `The Blacklist DMV`,
-        start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/theblacklistdmv-logo.png`, // This path is relative to the root of the site.
+          measurementId: process.env.GATSBY_FIREBASE_MEASUREMENT_ID,
+        },
       },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-fontawesome-css`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     // `gatsby-plugin-tiktok`,
   ],
-}
+};

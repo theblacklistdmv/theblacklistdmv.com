@@ -15,7 +15,7 @@ const AppFooter: React.FC = () => {
     <div className={`text-center ${styles.footer}`}>
       <Nav className={`justify-content-center ${styles.footer_nav}`}>
         <Nav.Item>
-          <Link className={styles.social_link} to="/#welcome">
+          <Link className={styles.social_link} to="/">
             Welcome
           </Link>
         </Nav.Item>
@@ -35,36 +35,64 @@ const AppFooter: React.FC = () => {
 
       <Nav className={`justify-content-center ${styles.icon_nav}`}>
         <Nav.Item>
-          <FontAwesomeIcon
-            icon={faTiktok}
-            size="lg"
-            color="white"
-            className={styles.social_icon}
-          />
+          <a
+            href="https://www.tiktok.com/@theblacklistdmv"
+            target="_blank"
+            rel="noreferrer"
+            className="toolbar-icon"
+          >
+            <FontAwesomeIcon
+              size="lg"
+              color="white"
+              icon={faTiktok}
+              className={styles.social_icon}
+            />
+          </a>
         </Nav.Item>
         <Nav.Item>
-          <FontAwesomeIcon
-            icon={faInstagram}
-            size="lg"
-            color="white"
-            className={styles.social_icon}
-          />
+          <a
+            href="https://www.instagram.com/theblacklistdmv/"
+            target="_blank"
+            rel="noreferrer"
+            className="toolbar-icon"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              size="lg"
+              color="white"
+              className={styles.social_icon}
+            />
+          </a>
         </Nav.Item>
         <Nav.Item>
-          <FontAwesomeIcon
-            icon={faFacebook}
-            size="lg"
-            color="white"
-            className={styles.social_icon}
-          />
+          <a
+            href="https://www.facebook.com/theblacklistdmv/"
+            target="_blank"
+            rel="noreferrer"
+            className="toolbar-icon"
+          >
+            <FontAwesomeIcon
+              icon={faFacebook}
+              size="lg"
+              color="white"
+              className={styles.social_icon}
+            />
+          </a>
         </Nav.Item>
         <Nav.Item>
-          <FontAwesomeIcon
-            icon={faTwitter}
-            size="lg"
-            color="white"
-            className={styles.social_icon}
-          />
+          <a
+            href="https://twitter.com/theblacklistdmv"
+            target="_blank"
+            rel="noreferrer"
+            className="toolbar-icon"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              size="lg"
+              color="white"
+              className={styles.social_icon}
+            />
+          </a>
         </Nav.Item>
       </Nav>
 
