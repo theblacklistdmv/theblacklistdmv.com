@@ -1,14 +1,23 @@
 import * as React from 'react';
-
+import AppHeader from '../components/AppHeader';
 import AppLayout from '../components/AppLayout';
 import Seo from '../components/Seo';
 
-const NotFoundPage = () => {
+const NotFoundPage: React.FC = () => {
   return (
     <AppLayout>
       <Seo title="404: Not Found" />
-      <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <AppHeader />
+      <div
+        style={{
+          textAlign: 'center',
+          paddingTop: '4rem',
+          paddingBottom: '4rem',
+        }}
+      >
+        <h1>404: Not Found</h1>
+        <p>Our Apologies. We cannot find the page you're looking for.</p>
+      </div>
     </AppLayout>
   );
 };

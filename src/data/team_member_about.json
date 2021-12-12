@@ -3,20 +3,20 @@
     "name": "Liz Beal",
     "title": "Co-Founder, Social Media Coordinator",
     "favoriteBusiness": "ELife Restaurant (they're vegan!)",
-    "favoriteFoods": "All types of pasta",
-    "funFact": "I am a teacher! I am passionate about working with children and making the education system equitable for all students.",
+    "favoriteFoods": "Pad Thai, Mac 'n' Cheese",
+    "bio": "Liz is a graduate of the University of Pittsburgh, where she studied Developmental Psychology and Elementary Education. She is currently a Fifth Grade teacher in the DC area.",
     "img": "/about/liz_headshot_400.jpg",
-    "alt": "Headshot of Liz Beal",
+    "alt": "Headshot of Liz",
     "extension": "jpg"
   },
   {
     "name": "Shi Johnson-Bey",
-    "title": "Co-founder, Full-stack Developer",
+    "title": "Co-founder, Software Developer",
     "favoriteBusiness": "Cloudy Donut Co.",
     "favoriteFoods": "French Fries, Fish Tacos, and Mangos",
-    "funFact": "I am a PhD student studying Computational Media. I enjoy making content creation tools for video games.",
+    "bio": "Shi is a graduate of the University of Delaware and Carnegie Mellon University, where he studied Computer Science and Biomedical Engineering, respectively. He is currently a Ph.D. student researching autonomous character AI tools at UC Santa Cruz.",
     "img": "/about/shi_headshot_400.jpg",
     "extension": "jpg",
-    "alt": "Headshot of Liz Beal"
+    "alt": "Headshot of Shi"
   }
 ]

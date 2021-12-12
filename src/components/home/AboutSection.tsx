@@ -35,6 +35,11 @@ const AboutSection: React.FC<Props> = ({ team_data, style }) => {
                   {member.name}
                 </div>
                 <div>{member.title}</div>
+                <div style={{ marginTop: '1rem' }}>{member.bio}</div>
+                <div style={{ marginTop: '0.5rem' }}>
+                  <b>Favorite Food(s): </b>
+                  {member.favoriteFoods}
+                </div>
               </div>
             </Col>
           </Row>

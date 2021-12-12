@@ -4,7 +4,7 @@ export interface TeamMember {
   name: string;
   title: string;
   favoriteBusiness: string;
-  funFact?: string;
+  bio?: string;
   favoriteFoods?: string;
   img: string;
   alt: string;
